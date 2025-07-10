@@ -9,5 +9,9 @@ app.get("/health", (req: any, res: { send: (arg0: string) => void; }) => {
   res.send("Everything is OK");
 })
 
+app.get("/product", (req: any, res: { send: (arg0: string) => void; }) => {
+  res.send("This is product page");
+})
+
 app.listen(8080, () => console.log("Sever is listening on Port 8080"))
 
